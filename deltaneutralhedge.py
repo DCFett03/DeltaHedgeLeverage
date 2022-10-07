@@ -18,21 +18,10 @@ zapWebhook = 'https://hooks.zapier.com/hooks/catch/12937216/bgmce86/?'
 textzapWebhook = 'https://hooks.zapier.com/hooks/catch/12937216/bg8ekac/?'
 
 jsonHeaders = {'Content-Type': 'application/json'}
-# directory = 'C:\\Users\\igor\\PycharmProjects\\scrape-perpetualpools\\'
-#position = int(input("Short 3x_BTC_SMA[1] or Long 3x_BTC_SMA[2])"))
-#if position == 1:
-'''
 
-class DecimalEncoder(json.JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, Decimal):
-            return str(obj)
-        return json.JSONEncoder.default(self, obj)
-result = json.dumps(crypto_tvlv2, cls=DecimalEncoder)
 
-'''
 def tracer_webscrape():
-    PATH = '/Users/danielchen/Desktop/chromedriver'
+    PATH = '/Users/Name/Desktop/chromedriver'
     browser = webdriver.Chrome(PATH)
     sttime = d.now().strftime('%Y%m%d_%H:%M:%S ,')
     urlv2 = "https://pools.tracer.finance/trade/"
